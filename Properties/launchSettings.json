@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "webhook_adapter_azure_devops_oauth2_csharp": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7241",
+      "launchBrowser": false
+    }
+  }
+}
