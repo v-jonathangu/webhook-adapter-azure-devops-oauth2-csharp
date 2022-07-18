@@ -27,12 +27,12 @@ namespace Contoso.Adapter
                 // get the json from the request
                 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
                 dynamic data = JsonConvert.DeserializeObject(requestBody);
-                // get the project name
-                string project = data.resource.project.name;
-                // get the title
-                string title = data.resource.title;
-                // get the markdown
-                string markdown = data.resource.content.markdown;
+
+
+                string project = data.resource.definition.name;
+                string title = data.message.text;
+                string markdown = data.message.markdown;
+
                 // create a json object
                 dynamic json = new
                 {
